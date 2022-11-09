@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -28,7 +28,7 @@
     <!-- header>h1{Test de menu} -->
     <header>
       <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
-      class="header_menuBtn"
+      class="header__menuBtn"
       >menu</button>
       <h1>Test de menu</h1>
       <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms
